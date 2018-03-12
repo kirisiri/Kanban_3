@@ -11,9 +11,9 @@ $.ajaxSetup({
 });
 
 $.ajax({
-	Url: basedUrl + '/board', 
+	Url: baseUrl + '/board', 
 	method: 'GET',
-	success: function)(response){
+	success: function (response){
 		setupColumns(response.columns);
 	}
 })
