@@ -34,7 +34,6 @@ function Column(id, name) {
 					var card = new Card(response.id, cardName);
 					self.creatCard(card);
 				}
-
 			});
 		});
 			
