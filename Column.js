@@ -20,7 +20,7 @@ function Column(id, name) {
 		});
 		
 		columnAddCard.click(function(event) {
-			cardName = prompt("Enter the name of the card");
+			var cardName = prompt("Enter the name of the card");
 			event.preventDefault();
 		//	self.createCard(new Card(cardName));
 			$.ajax({
@@ -32,7 +32,7 @@ function Column(id, name) {
 				}
 				success: function(response) {
 					var card = new Card(response.id, cardName);
-					self.creatCard(card);
+					self.createCard(card);
 				}
 			});
 		});
