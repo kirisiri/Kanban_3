@@ -17,7 +17,7 @@ $.ajax({
 	success: function(response){
 		setupColumns(response.columns);
 	}
-})
+});
 
 function setupColumns(columns) {
 	columns.forEach(function(column) {
