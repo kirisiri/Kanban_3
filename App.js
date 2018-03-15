@@ -1,3 +1,4 @@
+
 // OGÓLNA FUNKCJA
 
 var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
@@ -11,7 +12,7 @@ $.ajaxSetup({
 });
 
 $.ajax({
-	Url: baseUrl + '/board', 
+	url: baseUrl + '/board', 
 	method: 'GET',
 	success: function(response){
 		setupColumns(response.columns);
