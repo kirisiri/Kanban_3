@@ -24,7 +24,7 @@ function Column(id, name) {
 			event.preventDefault();
 		//	self.createCard(new Card(cardName));
 			$.ajax({
-				url: baseUrl + '/card',
+				url: ( prefix + baseUrl + '/card' ),
 				method: 'POST',
 				data: {
 				name: cardName,
@@ -52,7 +52,7 @@ Column.prototype = {
 	deleteColumn: function() {
 	  var self = this;
 	  $.ajax({
-	  	url: baseUrl + '/column/' + self.id,
+	  	url: prefix + baseUrl + '/column/' + self.id,
 	  	method: 'DELETE', 
 	  	success: function(response) {
 	  		self.element.remove();
