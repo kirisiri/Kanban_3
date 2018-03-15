@@ -1,3 +1,5 @@
+var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
+
 var board = {
 	name: 'Tablica Kanban',
 	createColumn: function(column) {
