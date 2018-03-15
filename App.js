@@ -1,6 +1,6 @@
 
 // OGÓLNA FUNKCJA
-
+var prefix = "https://cors-anywhere.herokuapp.com/";
 var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
 var myHeaders = {
   X-Client-Id: '2809',
@@ -12,7 +12,7 @@ $.ajaxSetup({
 });
 
 $.ajax({
-	url: baseUrl + '/board', 
+	url: (prefix + baseUrl + '/board'), 
 	method: 'GET',
 	success: function(response){
 		setupColumns(response.columns);
