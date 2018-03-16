@@ -38,9 +38,9 @@ function Column(id, name) {
 		});
 			
 			// KONSTRUOWANIE ELEMENTU KOLUMNY
-		column.append(columnTitle);
-			.append(columnDelete);
-			.append(columnAddCard);
+		column.append(columnTitle)
+			.append(columnDelete)
+			.append(columnAddCard)
 			.append(columnCardList);
 			return column;
 	}
