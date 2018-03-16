@@ -4,7 +4,7 @@ function Column(id, name) {
 	this.id = id;
 	this.name = name || 'No name given';
 	this.element = createColumn();
-}
+
 
 	function createColumn() {
 		// TWORZENIE NOWYCH WĘZŁÓW
@@ -38,13 +38,13 @@ function Column(id, name) {
 		});
 			
 			// KONSTRUOWANIE ELEMENTU KOLUMNY
-		column.append(columnTitle)
-			.append(columnDelete)
-			.append(columnAddCard)
+		column.append(columnTitle);
+			.append(columnDelete);
+			.append(columnAddCard);
 			.append(columnCardList);
 			return column;
-		}
 	}
+}
 Column.prototype = {
 	createCard: function(card) {
 	  this.element.children('ul').append(card.element);
